@@ -15,8 +15,8 @@ function App() {
   
   return (
     <div className="App">
-      <input type="text" value={tarefaTemp} onChange={e => settarefaTemp(e.target.value)} />
-      <button onClick={cadastrarTarefa} type="button">cadastrar</button>
+      <input data-testid="campo-tarefa" type="text" value={tarefaTemp} onChange={e => settarefaTemp(e.target.value)} />
+      <button data-testid="btn-cadastrar" onClick={cadastrarTarefa} type="button">cadastrar</button>
       <ul>
         {tarefas.map((tarefa, index) => (
           <li key={index}>{tarefa}</li>
