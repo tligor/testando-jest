@@ -6,4 +6,12 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportDir: 'cypress/relatorio',
+    overWrite: true,
+    html: true,
+    json: false,
+    timestamp: 'ddmmyyyy_HHMMss',
+  }
 });

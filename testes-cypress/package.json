@@ -12,6 +12,7 @@
   "type": "commonjs",
   "description": "",
   "devDependencies": {
-    "cypress": "^14.0.1"
+    "cypress": "^14.0.1",
+    "mochawesome": "^7.1.3"
   }
 }
